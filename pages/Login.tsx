@@ -263,8 +263,8 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                         <div className="bg-white dark:bg-slate-800 p-8 md:p-12 rounded-[3.5rem] border border-[#CDD4DD] dark:border-slate-700 shadow-2xl space-y-10">
                            <div className="text-center space-y-2">
                               <div className="flex justify-center -space-x-4 mb-4">
-                                 {[1, 2, 3].map((i) => (
-                                    <img key={i} src={`https://i.pravatar.cc/150?u=team${i}`} alt="Team" className="w-16 h-16 rounded-2xl border-4 border-white dark:border-slate-800 shadow-xl" />
+                                 {['/team-photos/Vaibhav.jpeg', '/team-photos/Drashti.jpeg', '/team-photos/Kavya%20S.jpeg'].map((src, i) => (
+                                    <img key={i} src={src} alt="Team" className="w-16 h-16 rounded-2xl border-4 border-white dark:border-slate-800 shadow-xl object-cover" />
                                  ))}
                               </div>
                               <h3 className="text-2xl font-bold text-[#2C3E50] dark:text-white">Meet the Visionaries</h3>
@@ -273,22 +273,29 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                            
                            <div className="space-y-8">
                               <TeamMember 
-                                 name="Dr. Arnab Sen" 
-                                 role="Chief Education Officer" 
-                                 desc="IIT Delhi Alumnus. 20+ years in K-12 pedagogical research."
-                                 img="https://i.pravatar.cc/150?u=arnab"
+                                 name="Vaibhav Kumar" 
+                                 role="Founder" 
+                                 desc="4th year btech CSE student and Foundation Level at IIT Madras"
+                                 img="/team-photos/Vaibhav.jpeg"
                               />
                               <TeamMember 
-                                 name="Sarah Jenkins" 
-                                 role="AI Engineering Lead" 
-                                 desc="Ex-Silicon Valley AI Researcher. Specialized in adaptive learning algorithms."
-                                 img="https://i.pravatar.cc/150?u=sarah"
+                                 name="Purnesh Agarwal" 
+                                 role="Co-founder" 
+                                 desc="Standalone Diploma Level student at IIT Madras"
+                                 img="https://i.pravatar.cc/150?u=purnesh"
+                              />
+                            
+                              <TeamMember 
+                                 name="Drashti Shah" 
+                                 role="Operations" 
+                                 desc="Final Year student at IIT Madras"
+                                 img="/team-photos/Drashti.jpeg"
                               />
                               <TeamMember 
-                                 name="Karthik Reddy" 
-                                 role="Product Visionary" 
-                                 desc="IIT Bombay Alumnus. Focused on student-centric UX design."
-                                 img="https://i.pravatar.cc/150?u=karthik"
+                                 name="Kavya S" 
+                                 role="Operations" 
+                                 desc="Standalone Diploma Level student at IIT Madras"
+                                 img="/team-photos/Kavya%20S.jpeg"
                               />
                            </div>
 
@@ -361,7 +368,7 @@ const LandingCard: React.FC<{ icon: any, title: string, desc: string }> = ({ ico
 
 const TeamMember: React.FC<{ name: string, role: string, desc: string, img: string }> = ({ name, role, desc, img }) => (
   <div className="flex gap-4 p-4 rounded-3xl hover:bg-[#FEF7F8] dark:hover:bg-slate-700/50 transition-all border border-transparent hover:border-[#CDD4DD] dark:hover:border-slate-700">
-    <img src={img} alt={name} className="w-12 h-12 rounded-2xl border border-[#CDD4DD] dark:border-slate-600" />
+    <img src={img} alt={name} className="w-12 h-12 rounded-2xl border border-[#CDD4DD] dark:border-slate-600 object-cover" />
     <div>
       <h4 className="font-bold text-sm text-[#2C3E50] dark:text-white">{name}</h4>
       <p className="text-[10px] font-bold text-[#22819A] uppercase tracking-widest mb-1">{role}</p>
