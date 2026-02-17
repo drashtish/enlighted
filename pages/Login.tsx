@@ -275,7 +275,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                               <TeamMember 
                                  name="Vaibhav Kumar" 
                                  role="Founder" 
-                                 desc="4th year btech CSE student and Foundation Level at IIT Madras"
+                                 desc="4th year BTech CSE student and Foundation Level student at IIT Madras"
                                  img="/team-photos/Vaibhav.jpeg"
                               />
                               <TeamMember 
@@ -288,7 +288,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                               <TeamMember 
                                  name="Drashti Shah" 
                                  role="Technical Lead" 
-                                 desc="Final Year student at IIT Madras"
+                                 desc="Standalone Final Year student at IIT Madras"
                                  img="/team-photos/Drashti.jpeg"
                               />
                               <TeamMember 
