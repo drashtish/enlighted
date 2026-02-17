@@ -1,0 +1,8 @@
+{
+  "name": "EnlightEd",
+  "description": "An AI-powered EdTech platform for CBSE & ICSE students featuring intelligent doubt solving, performance analytics, and unified parent-student dashboards.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

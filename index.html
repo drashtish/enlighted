@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnlightEd Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          darkMode: 'class',
+          theme: {
+            extend: {
+              colors: {
+                primary: '#22819A',
+                secondary: '#90C2E7',
+                brandBg: '#FEF7F8',
+              },
+              boxShadow: {
+                'custom': '0 2px 8px rgba(34, 129, 154, 0.08)',
+              }
+            }
+          }
+        }
+    </script>
+    <script>
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', 'Inter', sans-serif;
+            background-color: #FEF7F8;
+            color: #2C3E50;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .dark body {
+            background-color: #0F172A;
+            color: #F8FAFC;
+        }
+        .text-primary { color: #22819A; }
+        .bg-primary { background-color: #22819A; }
+        .border-primary { border-color: #22819A; }
+        .text-secondary { color: #90C2E7; }
+        .bg-secondary { background-color: #90C2E7; }
+        .shadow-custom { box-shadow: 0 2px 8px rgba(34, 129, 154, 0.08); }
+        .dark .shadow-custom { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); }
+        
+        * { transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
