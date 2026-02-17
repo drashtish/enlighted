@@ -282,7 +282,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                                  name="Purnesh Agarwal" 
                                  role="Co-founder" 
                                  desc="Standalone Diploma Level student at IIT Madras"
-                                 img="https://i.pravatar.cc/150?u=purnesh"
+                                 img="/team-photos/Purnesh.jpeg"
                               />
                             
                               <TeamMember 
@@ -340,7 +340,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
           </p>
         </div>
         <div className="text-[10px] font-bold text-[#6B7280] dark:text-slate-600 uppercase tracking-widest">
-          &copy; 2024 EnlightEd Ltd. • All Rights Reserved
+          &copy; 2026 EnlightEd Ltd. • All Rights Reserved
         </div>
       </footer>
     </div>
