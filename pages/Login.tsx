@@ -287,22 +287,20 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                             
                               <TeamMember 
                                  name="Drashti Shah" 
-                                 role="Operations" 
+                                 role="Technical Lead" 
                                  desc="Final Year student at IIT Madras"
                                  img="/team-photos/Drashti.jpeg"
                               />
                               <TeamMember 
                                  name="Kavya S" 
-                                 role="Operations" 
+                                 role="Operations Lead" 
                                  desc="Standalone Diploma Level student at IIT Madras"
                                  img="/team-photos/Kavya%20S.jpeg"
                               />
                            </div>
 
                            <div className="pt-8 border-t border-[#CDD4DD] dark:border-slate-700 flex flex-wrap items-center justify-center gap-6 opacity-40 grayscale hover:grayscale-0 transition-all">
-                              <span className="text-[10px] font-black tracking-tighter">IIT DELHI FOUNDATION</span>
-                              <span className="text-[10px] font-black tracking-tighter">IIT BOMBAY ALUMNI</span>
-                              <span className="text-[10px] font-black tracking-tighter">NANO TECHNOLOGY</span>
+                              <span className="text-[10px] font-black tracking-tighter">IIT MADRAS FOUNDATION</span>
                            </div>
                         </div>
                      </div>
