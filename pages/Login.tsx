@@ -263,7 +263,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                         <div className="bg-white dark:bg-slate-800 p-8 md:p-12 rounded-[3.5rem] border border-[#CDD4DD] dark:border-slate-700 shadow-2xl space-y-10">
                            <div className="text-center space-y-2">
                               <div className="flex justify-center -space-x-4 mb-4">
-                                 {['/team-photos/Vaibhav.jpeg', '/team-photos/purnesh.jpeg', '/team-photos/Drashti.jpeg', '/team-photos/Kavya%20S.jpeg'].map((src, i) => (
+                                 {['/team-photos/Vaibhav.jpeg', '/team-photos/Purnesh.jpeg', '/team-photos/Drashti.jpeg', '/team-photos/Kavya%20S.jpeg'].map((src, i) => (
                                     <img key={i} src={src} alt="Team" className="w-16 h-16 rounded-2xl border-4 border-white dark:border-slate-800 shadow-xl object-cover" />
                                  ))}
                               </div>
